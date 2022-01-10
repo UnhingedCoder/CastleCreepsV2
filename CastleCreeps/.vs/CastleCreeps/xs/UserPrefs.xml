@@ -2,14 +2,16 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AssetsForBuild/Scripts/VisionService/AbacusVisionCanvasView.cs">
     <Files>
       <File FileName="Assets/AssetsForBuild/Scripts/Abacus/Abacus.cs" Line="28" Column="8" />
-      <File FileName="Assets/AssetsForBuild/Scripts/Abacus/AbacusTrigger.cs" Line="7" Column="35" />
-      <File FileName="Assets/AssetsForBuild/Scripts/Abacus/AbacusKey.cs" Line="15" Column="19" />
-      <File FileName="Assets/AssetsForBuild/Scripts/VisionService/AbacusVisionCanvasView.cs" Line="15" Column="3" />
+      <File FileName="Assets/AssetsForBuild/Scripts/Abacus/AbacusTrigger.cs" Line="6" Column="21" />
+      <File FileName="Assets/AssetsForBuild/Scripts/Abacus/AbacusKey.cs" Line="5" Column="21" />
+      <File FileName="Assets/AssetsForBuild/Scripts/VisionService/AbacusVisionCanvasView.cs" Line="23" Column="1" />
+      <File FileName="Assets/AssetsForBuild/Scripts/Abacus/AbacusLaneDetector.cs" Line="23" Column="6" />
+      <File FileName="Assets/AssetsForBuild/Scripts/VisionService/EditorVisionObject.cs" Line="77" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="525d0ace-7a42-4389-a112-d57b610c558a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="61146a4a-32e5-40ab-ac07-22be631093a6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

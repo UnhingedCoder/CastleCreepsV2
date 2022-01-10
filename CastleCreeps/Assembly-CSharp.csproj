@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\Abacus.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\AbacusKey.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\AbacusLaneDetector.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\AbacusTrigger.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\VisionService\AbacusVisionCanvasView.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\VisionService\EditorVisionObject.cs" />
@@ -686,6 +687,9 @@
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
@@ -697,9 +701,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

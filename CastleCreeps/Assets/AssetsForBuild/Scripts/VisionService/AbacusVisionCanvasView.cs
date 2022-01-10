@@ -6,7 +6,7 @@ public class AbacusVisionCanvasView : MonoBehaviour, IAbacusParent
 {
 	[SerializeField] Abacus abacus;
 
-	private void Start()
+	private void Awake()
 	{
 		abacus.Init(this);
 	}
@@ -19,5 +19,23 @@ public class AbacusVisionCanvasView : MonoBehaviour, IAbacusParent
 	public void OnAbacusTriggerPressed()
 	{
 		// not required to implement
+	}
+
+	[ContextMenu("GET ABACUS VALUE")]
+	public void GetCurrentAbacusValue()
+	{
+		Debug.Log("CURRENT VALUE IS: " + abacus.GetValue());
+	}
+
+	public void ToggleAbacus()
+	{
+		if (abacus.gameObject.activeInHierarchy)
+		{
+			abacus.gameObject.SetActive(false);
+		}
+		else
+		{
+			abacus.gameObject.SetActive(true);
+		}
 	}
 }

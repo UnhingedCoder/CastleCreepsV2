@@ -39,6 +39,9 @@ public class AbacusTrigger : MonoBehaviour
             return;
         }
 
+
+        Debug.Log("ABACUS TRIGGER PRESSED");
+
         isTriggerPressed = true;
         parent.OnTriggerPressed();
         SetTriggerVisibility(false);
