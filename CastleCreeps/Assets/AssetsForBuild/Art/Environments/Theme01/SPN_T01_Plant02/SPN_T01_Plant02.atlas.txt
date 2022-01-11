@@ -1,0 +1,13 @@
+
+SPN_T01_Plant02.png
+size: 128,128
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+Midground/Tex_T01_DPlant01
+  rotate: false
+  xy: 2, 2
+  size: 56, 97
+  orig: 56, 97
+  offset: 0, 0
+  index: -1

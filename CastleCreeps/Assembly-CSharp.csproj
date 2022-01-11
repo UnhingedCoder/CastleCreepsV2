@@ -77,12 +77,22 @@
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant11\SPN_T01_Plant11.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\Spine\version.txt" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant07\SPN_T01_Plant07.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Level01\SPN_T01_Level01.atlas.txt" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant06\SPN_T01_Plant06.atlas.txt" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant05\SPN_T01_Plant05.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_BG03\SPN_T01_BG03.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant14\SPN_T01_Plant14.atlas.txt" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant02\SPN_T01_Plant02.atlas.txt" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant04\SPN_T01_Plant04.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -90,15 +100,25 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant09\SPN_T01_Plant09.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant12\SPN_T01_Plant12.atlas.txt" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_BG01\SPN_T01_BG01.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant10\SPN_T01_Plant10.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Level03\SPN_T01_Level03.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant13\SPN_T01_Plant13.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\DOTween\readme.txt" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant03\SPN_T01_Plant03.atlas.txt" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Level02\SPN_T01_Level02.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_BG02\SPN_T01_BG02.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant01\SPN_T01_Plant01.atlas.txt" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.24f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -702,8 +722,23 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="spine-unity.csproj">
+      <Project>{D604F8E9-017E-962B-BDDF-7CD37D72D87E}</Project>
+      <Name>spine-unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-editor.csproj">
+      <Project>{D6064ECA-DE38-B77E-63A1-99A4A766EFB2}</Project>
+      <Name>spine-unity-editor</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

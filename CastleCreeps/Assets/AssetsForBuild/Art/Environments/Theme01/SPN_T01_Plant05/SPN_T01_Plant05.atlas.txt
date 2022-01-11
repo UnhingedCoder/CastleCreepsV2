@@ -1,0 +1,13 @@
+
+SPN_T01_Plant05.png
+size: 256,256
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+Background/Tex_T01_Bush01
+  rotate: false
+  xy: 2, 2
+  size: 113, 180
+  orig: 119, 192
+  offset: 3, 12
+  index: -1

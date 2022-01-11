@@ -1,0 +1,13 @@
+
+SPN_T01_Plant12.png
+size: 128,128
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+Background/Tex_T01_CPlant01
+  rotate: false
+  xy: 2, 2
+  size: 31, 89
+  orig: 32, 89
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,160 @@
+
+SPN_T01_BG02.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bubble_01
+  rotate: false
+  xy: 2, 780
+  size: 325, 68
+  orig: 325, 69
+  offset: 0, 1
+  index: -1
+Bubble_02
+  rotate: false
+  xy: 2, 676
+  size: 309, 102
+  orig: 309, 102
+  offset: 0, 0
+  index: -1
+Bubble_03
+  rotate: false
+  xy: 2, 570
+  size: 502, 86
+  orig: 502, 86
+  offset: 0, 0
+  index: -1
+Bubble_04
+  rotate: false
+  xy: 2, 862
+  size: 262, 65
+  orig: 262, 65
+  offset: 0, 0
+  index: -1
+Ripple_01
+  rotate: false
+  xy: 313, 658
+  size: 567, 83
+  orig: 567, 83
+  offset: 0, 0
+  index: -1
+Ripple_02
+  rotate: false
+  xy: 329, 743
+  size: 305, 81
+  orig: 305, 81
+  offset: 0, 0
+  index: -1
+Ripple_03
+  rotate: false
+  xy: 488, 983
+  size: 395, 39
+  orig: 395, 40
+  offset: 0, 1
+  index: -1
+Ripple_04
+  rotate: false
+  xy: 272, 917
+  size: 385, 64
+  orig: 385, 64
+  offset: 0, 0
+  index: -1
+Ripple_05
+  rotate: false
+  xy: 617, 826
+  size: 189, 86
+  orig: 191, 87
+  offset: 0, 1
+  index: -1
+Ripple_06
+  rotate: false
+  xy: 2, 936
+  size: 151, 54
+  orig: 151, 54
+  offset: 0, 0
+  index: -1
+Ripple_07
+  rotate: false
+  xy: 211, 988
+  size: 119, 34
+  orig: 119, 34
+  offset: 0, 0
+  index: -1
+Ripple_08
+  rotate: false
+  xy: 266, 850
+  size: 349, 65
+  orig: 350, 66
+  offset: 0, 1
+  index: -1
+Ripple_09
+  rotate: false
+  xy: 2, 426
+  size: 766, 142
+  orig: 766, 142
+  offset: 0, 0
+  index: -1
+Ripple_10
+  rotate: false
+  xy: 115, 992
+  size: 94, 30
+  orig: 94, 30
+  offset: 0, 0
+  index: -1
+Ripple_11
+  rotate: false
+  xy: 659, 914
+  size: 172, 67
+  orig: 172, 67
+  offset: 0, 0
+  index: -1
+Ripple_12
+  rotate: false
+  xy: 808, 772
+  size: 208, 94
+  orig: 208, 94
+  offset: 0, 0
+  index: -1
+Ripple_13
+  rotate: false
+  xy: 155, 929
+  size: 115, 57
+  orig: 115, 57
+  offset: 0, 0
+  index: -1
+Ripple_14
+  rotate: false
+  xy: 885, 974
+  size: 113, 48
+  orig: 113, 48
+  offset: 0, 0
+  index: -1
+Ripple_16
+  rotate: false
+  xy: 930, 868
+  size: 92, 104
+  orig: 92, 104
+  offset: 0, 0
+  index: -1
+Ripple_17
+  rotate: true
+  xy: 833, 892
+  size: 80, 95
+  orig: 80, 95
+  offset: 0, 0
+  index: -1
+Ripple_19
+  rotate: false
+  xy: 332, 985
+  size: 154, 37
+  orig: 154, 37
+  offset: 0, 0
+  index: -1
+Ripple_20
+  rotate: false
+  xy: 2, 993
+  size: 111, 29
+  orig: 111, 29
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,13 @@
+
+SPN_T01_BG01.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Tex_T01_Water01
+  rotate: false
+  xy: 2, 2
+  size: 753, 1004
+  orig: 753, 1004
+  offset: 0, 0
+  index: -1

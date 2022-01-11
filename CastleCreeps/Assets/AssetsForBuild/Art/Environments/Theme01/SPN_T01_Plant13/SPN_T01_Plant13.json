@@ -1,0 +1,83 @@
+{
+"skeleton": { "hash": "PRHuUH0q+fMTSwVowo856dO0fxA", "spine": "3.8.99", "x": 494.1, "y": 1893.76, "width": 67, "height": 114.24 },
+"bones": [
+	{ "name": "root", "x": -763.9, "y": 2046 },
+	{ "name": "Tex_T01_CPlant05_bone1", "parent": "root", "length": 42.41, "rotation": 87.59, "x": 1290.05, "y": -150.9 },
+	{ "name": "Tex_T01_CPlant05_bone2", "parent": "Tex_T01_CPlant05_bone1", "length": 66.46, "rotation": 2.8, "x": 42.41 }
+],
+"slots": [
+	{ "name": "Background/Tex_T01_CPlant05", "bone": "root", "attachment": "Background/Tex_T01_CPlant05" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Background/Tex_T01_CPlant05": {
+				"Background/Tex_T01_CPlant05": {
+					"type": "mesh",
+					"uvs": [ 0.45174, 0.97259, 0.43842, 0.60283, 0.2121, 0.64858, 0, 0.34743, 0.13221, 0.06154, 0.55159, 0, 0.93768, 0.11109, 1, 0.4008, 1, 0.57234, 0.8112, 0.62571, 0.59818, 0.59521, 0.57821, 0.97641, 0.40625, 0.28418, 0.67706, 0.37362, 0.23703, 0.38818 ],
+					"triangles": [ 2, 14, 1, 2, 3, 14, 7, 8, 9, 14, 12, 1, 10, 1, 13, 9, 10, 13, 13, 1, 12, 9, 13, 7, 13, 6, 7, 12, 14, 4, 12, 5, 13, 13, 5, 6, 14, 3, 4, 12, 4, 5, 10, 11, 1, 11, 0, 1 ],
+					"vertices": [ 1, 1, -0.97, 1.75, 1, 2, 1, 42.22, 4.46, 0.32239, 2, 0.03, 4.46, 0.67761, 1, 2, -5.22, 19.66, 1, 1, 2, 30.11, 33.63, 1, 1, 2, 63.5, 24.55, 1, 1, 2, 70.51, -3.59, 1, 1, 2, 57.34, -29.38, 1, 1, 2, 23.41, -33.32, 1, 1, 2, 3.35, -33.19, 1, 1, 2, -2.81, -20.5, 1, 2, 1, 43.56, -6.2, 0.22841, 2, 0.85, -6.25, 0.77159, 1, 1, -1.06, -6.74, 1, 1, 2, 37.33, 6.37, 1, 1, 2, 26.74, -11.71, 1, 1, 2, 25.23, 17.78, 1 ],
+					"hull": 12
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"SPN_T01_Plant13": {
+		"bones": {
+			"Tex_T01_CPlant05_bone1": {
+				"rotate": [
+					{},
+					{ "time": 1.8333, "angle": -17.84, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5.1667, "angle": -17.84, "curve": 0.25, "c3": 0.75 },
+					{ "time": 6.6667 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 1.8333, "curve": "stepped" },
+					{ "time": 3.3333, "curve": "stepped" },
+					{ "time": 5.1667, "curve": "stepped" },
+					{ "time": 6.6667 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 1.8333, "curve": "stepped" },
+					{ "time": 3.3333, "curve": "stepped" },
+					{ "time": 5.1667, "curve": "stepped" },
+					{ "time": 6.6667 }
+				]
+			},
+			"Tex_T01_CPlant05_bone2": {
+				"rotate": [
+					{ "angle": -13.7 },
+					{ "time": 1, "angle": 16.14 },
+					{ "time": 1.8333, "angle": 9.39 },
+					{ "time": 2.6667, "angle": -13.06 },
+					{ "time": 3.3333, "angle": -13.7, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.3333, "angle": 16.14 },
+					{ "time": 5.1667, "angle": 9.39 },
+					{ "time": 6, "angle": -13.06 },
+					{ "time": 6.6667, "angle": -13.7 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 1.8333, "curve": "stepped" },
+					{ "time": 3.3333, "curve": "stepped" },
+					{ "time": 5.1667, "curve": "stepped" },
+					{ "time": 6.6667 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 1.8333, "curve": "stepped" },
+					{ "time": 3.3333, "curve": "stepped" },
+					{ "time": 5.1667, "curve": "stepped" },
+					{ "time": 6.6667 }
+				]
+			}
+		}
+	}
+}
+}

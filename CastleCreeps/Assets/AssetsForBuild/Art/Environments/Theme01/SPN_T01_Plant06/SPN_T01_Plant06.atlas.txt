@@ -1,0 +1,13 @@
+
+SPN_T01_Plant06.png
+size: 128,128
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+Background/Tex_T01_Flower02
+  rotate: false
+  xy: 2, 2
+  size: 64, 102
+  orig: 98, 123
+  offset: 16, 3
+  index: -1

@@ -1,0 +1,55 @@
+
+SPN_T01_Level03.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Midground/BPlant/Tex_T01_BFlower01
+  rotate: false
+  xy: 2, 311
+  size: 191, 196
+  orig: 191, 196
+  offset: 0, 0
+  index: -1
+Midground/BPlant/Tex_T01_BPlant01
+  rotate: true
+  xy: 149, 82
+  size: 67, 117
+  orig: 67, 117
+  offset: 0, 0
+  index: -1
+Midground/BPlant/Tex_T01_BPlant02
+  rotate: true
+  xy: 149, 151
+  size: 158, 144
+  orig: 160, 146
+  offset: 1, 1
+  index: -1
+Midground/BPlant/Tex_T01_BRock01
+  rotate: false
+  xy: 2, 64
+  size: 145, 245
+  orig: 147, 268
+  offset: 1, 22
+  index: -1
+Midground/Tex_T01_DPlant01
+  rotate: true
+  xy: 109, 6
+  size: 56, 97
+  orig: 56, 97
+  offset: 0, 0
+  index: -1
+Midground/Tex_T01_Flower01
+  rotate: false
+  xy: 208, 22
+  size: 44, 58
+  orig: 44, 58
+  offset: 0, 0
+  index: -1
+Midground/Tex_T01_Leaf01
+  rotate: false
+  xy: 2, 2
+  size: 105, 60
+  orig: 105, 60
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+
+SPN_T01_Plant03.png
+size: 256,256
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+Midground/Tex_T01_Flower01
+  rotate: false
+  xy: 109, 95
+  size: 44, 58
+  orig: 44, 58
+  offset: 0, 0
+  index: -1
+Midground/Tex_T01_Leaf01
+  rotate: false
+  xy: 2, 93
+  size: 105, 60
+  orig: 105, 60
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+
+SPN_T01_BG03.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Rock_01_Shadow
+  rotate: true
+  xy: 2, 798
+  size: 124, 206
+  orig: 124, 206
+  offset: 0, 0
+  index: -1
+Tex_T01_WaterRipple01
+  rotate: false
+  xy: 2, 123
+  size: 920, 673
+  orig: 920, 673
+  offset: 0, 0
+  index: -1
