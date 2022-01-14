@@ -73,6 +73,8 @@
     <Compile Include="Assets\AssetsForBuild\Scripts\CannonShootController.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\GameManagerView.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\LifeManager.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\LifeView.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\Mutant.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\MutantHPView.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\MutantManager.cs" />

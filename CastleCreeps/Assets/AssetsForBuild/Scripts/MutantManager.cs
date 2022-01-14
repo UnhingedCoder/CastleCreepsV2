@@ -18,15 +18,22 @@ public class MutantManager : MonoBehaviour
     [SerializeField] private float spawnInterval;
     [SerializeField] private float mutantMoveSpeed;
 
+    private bool canSpawnMutants;
+
+    private LifeManager mLifeManager;
 
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
+
+        mLifeManager = FindObjectOfType<LifeManager>();
     }
 
     private void Start()
     {
+        canSpawnMutants = true;
+
         InvokeRepeating("SpawnMutant", 1.3f, 3f);
     }
 
@@ -34,7 +41,6 @@ public class MutantManager : MonoBehaviour
     {
         if (occupiedLanes.Count >= 3)
         {
-            Debug.Log("ALL LANES OCCUPIED");
             return -1;
         }
 
@@ -51,20 +57,22 @@ public class MutantManager : MonoBehaviour
         return freeLanes[index];
     }
 
-    private void FreeALane()
+    private void CheckForFreeLanes()
     {
         for (int i = 0; i < mutantInLanes.Count; i++)
         {
             if (mutantInLanes[i] != null)
             {
                 Mutant m = mutantInLanes[i].GetComponent<Mutant>();
-                if (m.Health == 0 && !m.gameObject.activeInHierarchy)
+                if (!m.gameObject.activeInHierarchy)
                 {
                     mutantInLanes[i] = null;
                     occupiedLanes.Remove(i);
                 }
             }
         }
+
+        canSpawnMutants = (mLifeManager.TotalLivesRemaining > 0) ? true : false;
     }
 
     private int SetMutantHP()
@@ -75,7 +83,10 @@ public class MutantManager : MonoBehaviour
 
     private void SpawnMutant()
     {
-        FreeALane();
+        CheckForFreeLanes();
+
+        if (!canSpawnMutants)
+            return;
 
         int freeLaneIndex = GetFreeLane();
 

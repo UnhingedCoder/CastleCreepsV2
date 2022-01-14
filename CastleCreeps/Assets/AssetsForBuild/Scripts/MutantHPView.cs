@@ -10,7 +10,12 @@ public class MutantHPView : MonoBehaviour
 
     public void SetHP(int val)
     {
-        this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        this.transform.localScale = Vector3.zero;
+        this.transform.DOShakeScale(1.3f, Vector3.zero).OnComplete(() =>
+        {
+            this.transform.DOScale(new Vector3(1.0f, 1.0f, 1.0f), 0.25f);
+        });
+
         hpText.text = val.ToString();
     }
 

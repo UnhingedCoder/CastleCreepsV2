@@ -30,9 +30,12 @@ public class MutantView : MonoBehaviour
 
     private bool hasReachedDestination = false;
 
+    [SerializeField] private LifeManager mLifeManager;
+
     private void Awake()
     {
         anim = this.GetComponent<Animator>();
+        mLifeManager = FindObjectOfType<LifeManager>();
     }
 
     public void Init(Transform destPos, float speed)
@@ -102,6 +105,7 @@ public class MutantView : MonoBehaviour
             {
                 DisableMovement();
                 anim.SetTrigger("LOSELIFE");
+                mLifeManager.LoseALife();
             }
 
             hasReachedDestination = true;
