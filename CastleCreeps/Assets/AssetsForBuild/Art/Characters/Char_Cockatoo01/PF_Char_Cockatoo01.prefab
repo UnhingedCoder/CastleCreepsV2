@@ -1079,6 +1079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528100342f1ad43da9e312ff586b4674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  infectedMutant: {fileID: 8359662188448784504}
+  healedMutant: {fileID: 8359662188448784506}
 --- !u!1 &8359662188448784482
 GameObject:
   m_ObjectHideFlags: 0

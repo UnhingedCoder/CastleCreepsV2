@@ -1,18 +1,18 @@
 ﻿<Properties StartupConfiguration="{2E6A1CF1-1428-4E8C-1957-18F048CDAC0A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AssetsForBuild/Scripts/MutantManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AssetsForBuild/Scripts/CannonShootController.cs">
     <Files>
-      <File FileName="Assets/AssetsForBuild/Scripts/CannonShootController.cs" Line="125" Column="15" />
+      <File FileName="Assets/AssetsForBuild/Scripts/CannonShootController.cs" Line="116" Column="42" />
       <File FileName="Assets/AssetsForBuild/Scripts/GameManagerView.cs" />
       <File FileName="Assets/AssetsForBuild/Scripts/MutantManager.cs" Line="88" Column="25" />
       <File FileName="Assets/AssetsForBuild/Scripts/Mutant.cs" />
-      <File FileName="Assets/AssetsForBuild/Scripts/CannonAbacusDisplayView.cs" Line="42" Column="38" />
+      <File FileName="Assets/AssetsForBuild/Scripts/CannonAbacusDisplayView.cs" />
       <File FileName="Assets/AssetsForBuild/Scripts/MutantHPView.cs" />
       <File FileName="Assets/AssetsForBuild/Scripts/MutantView.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2c80783a-c82c-4c59-92a2-b45c3870fbfa" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="670215f9-5327-4051-a464-29ab5edb9a3c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

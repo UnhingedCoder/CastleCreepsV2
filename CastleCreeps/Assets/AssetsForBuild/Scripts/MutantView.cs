@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MutantView : MonoBehaviour
 {
+    [SerializeField] private GameObject infectedMutant;
+    [SerializeField] private GameObject healedMutant;
+
     private Animator anim;
 
     private Transform destinationPosition;
@@ -39,6 +42,9 @@ public class MutantView : MonoBehaviour
         DisableMovement();
 
         Reset();
+
+        infectedMutant.SetActive(true);
+        healedMutant.SetActive(false);
     }
 
     private void Update()
@@ -117,6 +123,17 @@ public class MutantView : MonoBehaviour
     {
         DisableMovement();
         anim.SetTrigger("HEAL");
+
+        StartCoroutine(EnableHealedMutant());
+    }
+
+    IEnumerator EnableHealedMutant()
+    {
+        yield return new WaitForSeconds(2.0f);
+
+        infectedMutant.SetActive(false);
+        healedMutant.SetActive(true);
+
     }
 
     public void Reset()
