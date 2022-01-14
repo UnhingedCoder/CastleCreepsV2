@@ -11,6 +11,8 @@ public class MutantManager : MonoBehaviour
     [SerializeField] List<Transform> mutantSpawnPoints;
     [SerializeField] List<Transform> mutantEndPoints;
 
+    [SerializeField] List<string> mutantTags;
+
     public List<Transform> mutantInLanes = new List<Transform>();
 
     [SerializeField] private float spawnInterval;
@@ -80,8 +82,10 @@ public class MutantManager : MonoBehaviour
         if (freeLaneIndex < 0)
             return;
 
-        GameObject mObj = ObjectPooler.Instance.GetPooledObject("Mutant_Cockatoo");
+        string mTag = mutantTags[Random.Range(0, mutantTags.Count)];
+        GameObject mObj = ObjectPooler.Instance.GetPooledObject(mTag);
 
+        Debug.Log(mTag);
         Mutant m = mObj.GetComponent<Mutant>();
 
         mObj.transform.position = mutantSpawnPoints[freeLaneIndex].position;

@@ -1556,6 +1556,14 @@ MonoBehaviour:
   - {fileID: 1719832585}
   - {fileID: 1625671847}
   - {fileID: 1273200183}
+  mutantTags:
+  - Mutant_Cockatoo
+  - Mutant_Crab
+  - Mutant_Fish
+  - Mutant_Octopus
+  - Mutant_Raven
+  - Mutant_Turtle
+  - Mutant_Vulture
   mutantInLanes:
   - {fileID: 0}
   - {fileID: 0}
@@ -1763,7 +1771,31 @@ MonoBehaviour:
     shouldExpand: 1
   - objectToPool: {fileID: 8359662188448784480, guid: 4a8929d93da424f5daec4fe47f9df474,
       type: 3}
-    amountToPool: 6
+    amountToPool: 3
+    shouldExpand: 1
+  - objectToPool: {fileID: 8795873274784542153, guid: 130b58366d1ef41219078e5e46555bb5,
+      type: 3}
+    amountToPool: 3
+    shouldExpand: 1
+  - objectToPool: {fileID: 5994248163484674378, guid: 48ec2405157214e0db8186840363a496,
+      type: 3}
+    amountToPool: 3
+    shouldExpand: 1
+  - objectToPool: {fileID: 5782162962555100520, guid: c2f6506ec0ba449199bf92a0ed67056b,
+      type: 3}
+    amountToPool: 3
+    shouldExpand: 1
+  - objectToPool: {fileID: 8814472649472702348, guid: 872a54720da49499ca9f107ed019ebc2,
+      type: 3}
+    amountToPool: 3
+    shouldExpand: 1
+  - objectToPool: {fileID: 5974566695123204107, guid: b39d5872c93a149ccbbc1b828df5d62f,
+      type: 3}
+    amountToPool: 3
+    shouldExpand: 1
+  - objectToPool: {fileID: 4506046935409047750, guid: 09968430beb4b4088bdbc8a11110fc67,
+      type: 3}
+    amountToPool: 3
     shouldExpand: 1
   pooledObjects: []
 --- !u!4 &1917312902

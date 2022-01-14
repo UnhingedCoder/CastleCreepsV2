@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Projectile
   - Mutant_Cockatoo
+  - Mutant_Crab
+  - Mutant_Fish
+  - Mutant_Octopus
+  - Mutant_Raven
+  - Mutant_Turtle
+  - Mutant_Vulture
   layers:
   - Default
   - TransparentFX
