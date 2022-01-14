@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Events;
+
+[System.Serializable]
+public class AbacusTriggerEvent : UnityEvent<int>
+{
+}
 
 public class Abacus : MonoBehaviour, IAbacusKeyParent, IAbacusTriggerParent
 {
@@ -21,7 +27,15 @@ public class Abacus : MonoBehaviour, IAbacusKeyParent, IAbacusTriggerParent
 
 	Sequence animationSequence;
 
-	public void Init(IAbacusParent parent)
+	public AbacusTriggerEvent event_AbacusTriggerPressed;
+
+    private void Awake()
+    {
+		if (event_AbacusTriggerPressed == null)
+			event_AbacusTriggerPressed = new AbacusTriggerEvent();
+	}
+
+    public void Init(IAbacusParent parent)
 	{
 		this.parent = parent;
 
@@ -41,6 +55,7 @@ public class Abacus : MonoBehaviour, IAbacusKeyParent, IAbacusTriggerParent
 	public void OnTriggerPressed()
 	{
 		parent.OnAbacusTriggerPressed();
+		event_AbacusTriggerPressed.Invoke(GetValue());
 	}
 
 	public int GetValue()

@@ -67,8 +67,16 @@
     <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\AbacusKey.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\AbacusLaneDetector.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\AbacusTrigger.cs" />
-    <Compile Include="Assets\AssetsForBuild\Scripts\VisionService\AbacusVisionCanvasView.cs" />
-    <Compile Include="Assets\AssetsForBuild\Scripts\VisionService\EditorVisionObject.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\AbacusVisionCanvasView.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\EditorVisionObject.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\CannonShootController.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\GameManagerView.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\Mutant.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\MutantHPView.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\MutantManager.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\MutantView.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\ObjectPooler.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics.cs" />
@@ -86,6 +94,7 @@
     <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant06\SPN_T01_Plant06.atlas.txt" />
     <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant05\SPN_T01_Plant05.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\AssetsForBuild\Shaders\SHD_Unlit_Receive_Shadow.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_BG03\SPN_T01_BG03.atlas.txt" />
@@ -114,6 +123,7 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\DOTween\readme.txt" />
     <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Plant03\SPN_T01_Plant03.atlas.txt" />
+    <None Include="Assets\AssetsForBuild\Shaders\SHD_Unlit_Cast_Shadow.shader" />
     <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_Level02\SPN_T01_Level02.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\AssetsForBuild\Art\Environments\Theme01\SPN_T01_BG02\SPN_T01_BG02.atlas.txt" />
@@ -671,6 +681,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
       <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
@@ -710,6 +723,9 @@
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
@@ -721,12 +737,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>/Users/ayanchakrabarty/Documents/Projects/GitHub/CastleCreepsV2/CastleCreeps/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

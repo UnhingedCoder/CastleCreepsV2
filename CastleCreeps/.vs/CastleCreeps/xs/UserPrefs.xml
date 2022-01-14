@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{2E6A1CF1-1428-4E8C-1957-18F048CDAC0A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AssetsForBuild/Scripts/VisionService/AbacusVisionCanvasView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AssetsForBuild/Scripts/MutantManager.cs">
     <Files>
-      <File FileName="Assets/AssetsForBuild/Scripts/Abacus/Abacus.cs" Line="28" Column="8" />
-      <File FileName="Assets/AssetsForBuild/Scripts/Abacus/AbacusTrigger.cs" Line="6" Column="21" />
-      <File FileName="Assets/AssetsForBuild/Scripts/Abacus/AbacusKey.cs" Line="5" Column="21" />
-      <File FileName="Assets/AssetsForBuild/Scripts/VisionService/AbacusVisionCanvasView.cs" Line="23" Column="1" />
-      <File FileName="Assets/AssetsForBuild/Scripts/Abacus/AbacusLaneDetector.cs" Line="23" Column="6" />
-      <File FileName="Assets/AssetsForBuild/Scripts/VisionService/EditorVisionObject.cs" Line="77" Column="10" />
+      <File FileName="Assets/AssetsForBuild/Scripts/CannonShootController.cs" Line="95" Column="104" />
+      <File FileName="Assets/AssetsForBuild/Scripts/GameManagerView.cs" Line="27" Column="54" />
+      <File FileName="Assets/AssetsForBuild/Scripts/MutantManager.cs" Line="59" Column="39" />
+      <File FileName="Assets/AssetsForBuild/Scripts/MutantView.cs" Line="102" Column="10" />
+      <File FileName="Assets/AssetsForBuild/Scripts/MutantHPView.cs" Line="13" Column="23" />
+      <File FileName="Assets/AssetsForBuild/Scripts/Mutant.cs" Line="40" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="61146a4a-32e5-40ab-ac07-22be631093a6" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="872e024a-5e84-49d6-93db-fffe1d513505" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

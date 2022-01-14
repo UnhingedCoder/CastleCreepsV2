@@ -22,6 +22,11 @@ public class AbacusLaneDetector : MonoBehaviour
         rectTransform = this.GetComponent<RectTransform>();
     }
 
+    private void Start()
+    {
+        InvokeRepeating("DetectAbacusLane", 0.3f, 0.3f);
+    }
+
     private void DetectAbacusLane()
     {
         //Left lane
