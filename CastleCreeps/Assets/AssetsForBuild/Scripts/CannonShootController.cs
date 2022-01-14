@@ -9,13 +9,18 @@ public class CannonShootController : MonoBehaviour
 
     [SerializeField] private float projectileSpeed;
 
-    public Transform endPoint;
-
+    [Header("LANE")]
     [SerializeField] Transform cannonTransform = default;
     [SerializeField] List<Transform> cannonPositionsTransform = default;
+
+    [Header("PROJECTILE")]
     [SerializeField] List<Transform> cannonFirePositionsTransform = default;
     [SerializeField] GameObject cannonFireGlowFX;
 
+    [Header("ABACUS OVERHEAD DISPLAY")]
+    [SerializeField] private CannonAbacusDisplayView abacus100sView;
+    [SerializeField] private CannonAbacusDisplayView abacus10sView;
+    [SerializeField] private CannonAbacusDisplayView abacus1sView;
 
     private bool inTween = false;
 
@@ -69,8 +74,8 @@ public class CannonShootController : MonoBehaviour
     #region PROJECTILE FIRING
     public void FireInLane(int val)
     {
-        //Fire projectile only if mutants are present in lane and cannon not in cooldown
-        if (canFireProjectile && MutantManager.Instance.mutantInLanes[currLaneIndex] != null)
+        //Fire projectile only if mutants are present in lane and cannon not in cooldown and abacus value is not 0
+        if (canFireProjectile && MutantManager.Instance.mutantInLanes[currLaneIndex] != null && val > 0)
         {
             StartCoroutine(FireCo(val));
             StartCoroutine(FireCooldownCo());
@@ -116,6 +121,24 @@ public class CannonShootController : MonoBehaviour
     public void FireProjectileFX()
     {
         cannonFireGlowFX.SetActive(true);
+    }
+    #endregion
+
+    #region ABACUS OVERHEAD DISPLAY
+    public void SetCannonOverheadAbacusValue(int newValue, int oldValue)
+    {
+        int initOnes = (oldValue % 10);
+        int initTens = (oldValue % 100 - initOnes) / 10;
+        int initHundreds = (oldValue % 1000 - initTens - initOnes) / 100;
+
+
+        int newOnes = (newValue % 10);
+        int newTens = (newValue % 100 - newOnes) / 10;
+        int newHundreds = (newValue % 1000 - newTens - newOnes) / 100;
+
+        abacus100sView.SetCannonAbacusValue(newHundreds, initHundreds);
+        abacus10sView.SetCannonAbacusValue(newTens, initTens);
+        abacus1sView.SetCannonAbacusValue(newOnes, initOnes);
     }
     #endregion
 }

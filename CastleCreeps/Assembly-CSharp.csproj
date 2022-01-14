@@ -69,6 +69,7 @@
     <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\AbacusTrigger.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\AbacusVisionCanvasView.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\Abacus\EditorVisionObject.cs" />
+    <Compile Include="Assets\AssetsForBuild\Scripts\CannonAbacusDisplayView.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\CannonShootController.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\GameManagerView.cs" />
     <Compile Include="Assets\AssetsForBuild\Scripts\LevelManager.cs" />
