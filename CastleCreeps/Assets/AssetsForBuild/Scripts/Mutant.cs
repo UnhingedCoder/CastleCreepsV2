@@ -13,6 +13,8 @@ public class Mutant : MonoBehaviour
 
     private MutantHPView mhealthView;
 
+    private int totalAttemptsToHeal;
+
     private void Awake()
     {
         mView = this.GetComponent<MutantView>();
@@ -45,6 +47,7 @@ public class Mutant : MonoBehaviour
             mhealthView.UpdateHP(health);
         }
 
+        totalAttemptsToHeal++;
 
     }
 }
