@@ -10,6 +10,10 @@ public class GameManagerView : MonoBehaviour
     private int initialAbacusValue = 999;
     private int currentAbacusValue;
 
+    [SerializeField] private bool isGamePaused = false;
+
+    public bool IsGamePaused { get => isGamePaused; }
+
     private void Awake()
     {
     }

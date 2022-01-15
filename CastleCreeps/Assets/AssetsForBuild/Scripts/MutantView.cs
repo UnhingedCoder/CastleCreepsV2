@@ -6,6 +6,8 @@ public class MutantView : MonoBehaviour
 {
     [SerializeField] private GameObject infectedMutant;
     [SerializeField] private GameObject healedMutant;
+    [SerializeField] private GameObject healFX;
+    [SerializeField] private GameObject hitFX;
 
     private Animator anim;
 
@@ -30,12 +32,15 @@ public class MutantView : MonoBehaviour
 
     private bool hasReachedDestination = false;
 
-    [SerializeField] private LifeManager mLifeManager;
+    private LifeManager mLifeManager;
+
+    private GameManagerView mGameManager;
 
     private void Awake()
     {
         anim = this.GetComponent<Animator>();
         mLifeManager = FindObjectOfType<LifeManager>();
+        mGameManager = FindObjectOfType<GameManagerView>();
     }
 
     public void Init(Transform destPos, float speed)
@@ -59,6 +64,7 @@ public class MutantView : MonoBehaviour
 
     private void HandleWalking()
     {
+
         if (this.idleWaitTimer < this.idleWaitTime)
         {
             this.idleWaitTimer += Time.deltaTime;
@@ -121,13 +127,15 @@ public class MutantView : MonoBehaviour
     {
         DisableMovement();
         anim.SetTrigger("HIT");
+        hitFX.SetActive(true);
     }
 
     public void Heal()
     {
         DisableMovement();
         anim.SetTrigger("HEAL");
-
+        healFX.SetActive(true);
+        hitFX.SetActive(true);
         StartCoroutine(EnableHealedMutant());
     }
 

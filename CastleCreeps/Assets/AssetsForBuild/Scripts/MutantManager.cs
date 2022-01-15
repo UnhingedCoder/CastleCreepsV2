@@ -21,6 +21,7 @@ public class MutantManager : MonoBehaviour
     private bool canSpawnMutants;
 
     private LifeManager mLifeManager;
+    private GameManagerView mGameManager;
 
     private void Awake()
     {
@@ -28,6 +29,7 @@ public class MutantManager : MonoBehaviour
             Instance = this;
 
         mLifeManager = FindObjectOfType<LifeManager>();
+        mGameManager = FindObjectOfType<GameManagerView>();
     }
 
     private void Start()
