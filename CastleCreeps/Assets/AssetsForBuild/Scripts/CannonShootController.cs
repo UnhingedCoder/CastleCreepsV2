@@ -77,12 +77,14 @@ public class CannonShootController : MonoBehaviour
         //Fire projectile only if mutants are present in lane and cannon not in cooldown and abacus value is not 0
         if (canFireProjectile && MutantManager.Instance.mutantInLanes[currLaneIndex] != null && val > 0)
         {
-            StartCoroutine(FireCo(val));
+            Vector3 destPos = MutantManager.Instance.mutantInLanes[currLaneIndex].position;
+            Mutant mutantInLane = MutantManager.Instance.mutantInLanes[currLaneIndex].GetComponent<Mutant>();
+            StartCoroutine(FireCo(val, destPos, mutantInLane));
             StartCoroutine(FireCooldownCo());
         }
     }
 
-    IEnumerator FireCo(int val)
+    IEnumerator FireCo(int val, Vector3 destinationPos, Mutant m)
     {
         canFireProjectile = false;
 
@@ -97,13 +99,14 @@ public class CannonShootController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         p.SetActive(true);
 
-        while (p.transform.position.z < MutantManager.Instance.mutantInLanes[currLaneIndex].position.z)
+
+        while (p.transform.position.z < destinationPos.z)
         {
-            p.transform.position = Vector3.MoveTowards(p.transform.position, MutantManager.Instance.mutantInLanes[currLaneIndex].position, Time.deltaTime * projectileSpeed);
+            p.transform.position = Vector3.MoveTowards(p.transform.position, destinationPos, Time.deltaTime * projectileSpeed);
             yield return new WaitForEndOfFrame();
         }
 
-        MutantManager.Instance.mutantInLanes[currLaneIndex].GetComponent<Mutant>().OnTakingHit(val);
+        m.OnTakingHit(val);
 
         yield return new WaitForSeconds(0.1f);
 
