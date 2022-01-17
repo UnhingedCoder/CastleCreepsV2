@@ -8,7 +8,7 @@ public class MutantHPView : MonoBehaviour
 {
     [SerializeField] TextMeshPro hpText;
 
-    public void SetHP(int val)
+    public void SetHP(string val)
     {
         this.transform.localScale = Vector3.zero;
         this.transform.DOShakeScale(1.3f, Vector3.zero).OnComplete(() =>
@@ -16,7 +16,7 @@ public class MutantHPView : MonoBehaviour
             this.transform.DOScale(new Vector3(1.0f, 1.0f, 1.0f), 0.25f);
         });
 
-        hpText.text = val.ToString();
+        hpText.text = val;
     }
 
     public void UpdateHP(int val)

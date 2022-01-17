@@ -85,29 +85,37 @@ public class MutantManager : MonoBehaviour
 
     private void SpawnMutant()
     {
-        CheckForFreeLanes();
+        if (LevelManager.Instance.CanSpawnMutant())
+        {
+            CheckForFreeLanes();
 
-        if (!canSpawnMutants)
-            return;
+            if (!canSpawnMutants)
+                return;
 
-        int freeLaneIndex = GetFreeLane();
+            int freeLaneIndex = GetFreeLane();
 
-        if (freeLaneIndex < 0)
-            return;
+            if (freeLaneIndex < 0)
+                return;
 
-        string mTag = mutantTags[Random.Range(0, mutantTags.Count)];
-        GameObject mObj = ObjectPooler.Instance.GetPooledObject(mTag);
+            string mTag = mutantTags[Random.Range(0, mutantTags.Count)];
+            GameObject mObj = ObjectPooler.Instance.GetPooledObject(mTag);
 
-        Debug.Log(mTag);
-        Mutant m = mObj.GetComponent<Mutant>();
+            Debug.Log(mTag);
+            Mutant m = mObj.GetComponent<Mutant>();
 
-        mObj.transform.position = mutantSpawnPoints[freeLaneIndex].position;
-        mObj.transform.rotation = mutantSpawnPoints[freeLaneIndex].rotation;
+            mObj.transform.position = mutantSpawnPoints[freeLaneIndex].position;
+            mObj.transform.rotation = mutantSpawnPoints[freeLaneIndex].rotation;
 
-        mutantInLanes[freeLaneIndex] = mObj.transform;
+            mutantInLanes[freeLaneIndex] = mObj.transform;
 
-        m.Init(mutantEndPoints[freeLaneIndex], mutantMoveSpeed, SetMutantHP());
+            MutantInfo mInfo = LevelManager.Instance.GetMutant();
+            m.Init(mutantEndPoints[freeLaneIndex], mutantMoveSpeed, mInfo.HPA);
 
-        mObj.SetActive(true);
+            mObj.SetActive(true);
+        }
+        else
+        {
+            CancelInvoke("SpawnMutant");
+        }
     }
 }

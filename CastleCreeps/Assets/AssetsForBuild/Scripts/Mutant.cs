@@ -21,11 +21,11 @@ public class Mutant : MonoBehaviour
         mhealthView = this.GetComponentInChildren<MutantHPView>();
     }
 
-    public void Init(Transform destPos, float speed, int hp)
+    public void Init(Transform destPos, float speed, HPAttributes hp)
     {
         mView.Init(destPos, speed);
-        health = hp;
-        mhealthView.SetHP(health);
+        health = hp.hPValue;
+        mhealthView.SetHP(hp.hPString);
     }
 
     public void OnTakingHit(int val)

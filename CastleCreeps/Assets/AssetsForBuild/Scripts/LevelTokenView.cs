@@ -17,10 +17,13 @@ public class LevelTokenView : MonoBehaviour
     [SerializeField] private TextMeshProUGUI baseLevelText;
     [SerializeField] private TextMeshProUGUI pinLevelText;
 
+    int _levelIndex;
+
     public void Init(int levelIndex, LEVELSTATE state)
     {
-        baseLevelText.text = levelIndex.ToString();
-        pinLevelText.text = levelIndex.ToString();
+        _levelIndex = levelIndex;
+        baseLevelText.text = _levelIndex.ToString();
+        pinLevelText.text = _levelIndex.ToString();
 
         switch (state)
         {
@@ -49,5 +52,7 @@ public class LevelTokenView : MonoBehaviour
 
     public void OnLevelClicked()
     {
+        LevelManager.Instance.SetCurrentLevel(_levelIndex);
+        SceneHandler.Instance.LoadDemoScene();
     }
 }
