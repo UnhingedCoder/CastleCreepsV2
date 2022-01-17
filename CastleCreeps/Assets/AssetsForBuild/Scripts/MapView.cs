@@ -17,7 +17,7 @@ public class MapView : MonoBehaviour
         for (int i = 0; i < levelTokens.Count; i++)
         {
             int lvl = i + 1;
-            levelTokens[i].Init(lvl, LEVELSTATE.LOCKED);
+            levelTokens[i].Init(lvl, LEVELSTATE.COMPLETED);
         }
     }
 }

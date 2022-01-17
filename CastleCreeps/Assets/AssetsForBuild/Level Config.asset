@@ -13,17 +13,33 @@ MonoBehaviour:
   m_Name: Level Config
   m_EditorClassIdentifier: 
   levels:
-  - lvlNum: 1
-    noOfCreeps: 5
+  - noOfMutants: 7
     _questionInfo:
       _questionType: 0
       _operandsAllowed: 0
-      lowerLimit: 12
+      lowerLimit: 5
+      upperLimit: 99
+  - noOfMutants: 10
+    _questionInfo:
+      _questionType: 0
+      _operandsAllowed: 0
+      lowerLimit: 10
+      upperLimit: 499
+  - noOfMutants: 12
+    _questionInfo:
+      _questionType: 0
+      _operandsAllowed: 0
+      lowerLimit: 10
       upperLimit: 999
-  - lvlNum: 2
-    noOfCreeps: 5
+  - noOfMutants: 15
     _questionInfo:
       _questionType: 1
       _operandsAllowed: 0
-      lowerLimit: 0
-      upperLimit: 999
+      lowerLimit: 10
+      upperLimit: 499
+  - noOfMutants: 18
+    _questionInfo:
+      _questionType: 1
+      _operandsAllowed: 1
+      lowerLimit: 10
+      upperLimit: 499
