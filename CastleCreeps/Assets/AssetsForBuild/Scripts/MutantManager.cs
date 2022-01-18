@@ -77,14 +77,31 @@ public class MutantManager : MonoBehaviour
         canSpawnMutants = (mLifeManager.TotalLivesRemaining > 0) ? true : false;
     }
 
-    private int SetMutantHP()
+    private void CheckForLevelComplete()
     {
-        int hp = Random.Range(1, 999);
-        return hp;
+        bool areLanesEmpty = false;
+
+        if (!LevelManager.Instance.CanSpawnMutant())
+        {
+            for (int i = 0; i < mutantInLanes.Count; i++)
+            {
+                if (mutantInLanes[i] != null)
+                {
+                    areLanesEmpty = true;
+                }
+            }
+        }
+
+        if (!canSpawnMutants)
+            mGameManager.OnGameOver(false);
+        else if(areLanesEmpty)
+            mGameManager.OnGameOver(true);
     }
 
     private void SpawnMutant()
     {
+        CheckForLevelComplete();
+
         if (LevelManager.Instance.CanSpawnMutant())
         {
             CheckForFreeLanes();

@@ -7,6 +7,8 @@ public class GameManagerView : MonoBehaviour
     [SerializeField] private Abacus abacus;
     [SerializeField] private AbacusLaneDetector abacusLaneDetector;
 
+    [SerializeField] private GameOverView gameOverScreen;
+
     private int initialAbacusValue = 999;
     private int currentAbacusValue;
 
@@ -40,5 +42,11 @@ public class GameManagerView : MonoBehaviour
     private void OnFireTriggerPressed(int val)
     {
         CannonShootController.Instance.FireInLane(val);
+    }
+
+    public void OnGameOver(bool status)
+    {
+        gameOverScreen.gameObject.SetActive(true);
+        gameOverScreen.OnLevelComplete(status);
     }
 }
