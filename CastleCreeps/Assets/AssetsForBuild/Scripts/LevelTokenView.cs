@@ -52,6 +52,7 @@ public class LevelTokenView : MonoBehaviour
 
     public void OnLevelClicked()
     {
+        LevelManager.Instance.ResetTotalMutantsSpawned();
         LevelManager.Instance.SetCurrentLevel(_levelIndex);
         SceneHandler.Instance.LoadDemoScene();
     }

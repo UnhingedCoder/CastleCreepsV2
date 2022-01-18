@@ -41,6 +41,11 @@ public class LevelManager : MonoBehaviour
 
     }
 
+    public void ResetTotalMutantsSpawned()
+    {
+        numOfMutantsSpawned = 0;
+    }
+
     string a = "# + #";
     string b = "# - #";
     string c = "# + # - #";
